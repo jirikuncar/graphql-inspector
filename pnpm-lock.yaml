@@ -451,7 +451,7 @@ importers:
       '@whatwg-node/fetch': 0.8.1
       cross-env: 7.0.3
       next: 13.2.3
-      next-sitemap: 4.0.5
+      next-sitemap: 4.0.6
       react: 18.2.0
       react-dom: 18.2.0
       react-flip-move: 3.0.5
@@ -472,7 +472,7 @@ importers:
       '@types/node': 18.11.18
       '@types/react': 18.0.28
       cross-env: 7.0.3
-      next-sitemap: 4.0.5_next@13.2.3
+      next-sitemap: 4.0.6_next@13.2.3
       typescript: 4.9.4
 
 packages:
@@ -10078,8 +10078,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next-sitemap/4.0.5_next@13.2.3:
-    resolution: {integrity: sha512-kIABX4n8wJqY2sttRjivBF2r1MgQ1pg12y87qGT+5meippq0ivxaNSRldMDOj8pIGhXW6uFAsCxyH/JftqkwWQ==}
+  /next-sitemap/4.0.6_next@13.2.3:
+    resolution: {integrity: sha512-pZ9tynYe6mRR189qZqcOlWVgM1Gxo07BJQW0AjerKmLwQOt+6FQMdaDgifgCt6jDT3Y3EG/+NUDDZRcd0gbPkA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
