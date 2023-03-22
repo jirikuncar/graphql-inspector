@@ -15,7 +15,7 @@ export { countDepth } from './validate/query-depth';
 export { calculateTokenCount } from './validate/token-count';
 
 export {
-  fieldArgumentDescriptionFromMeta,
+  fieldArgumentDescriptionChangedFromMeta,
   fieldArgumentDefaultChangedFromMeta,
   fieldArgumentTypeChangedFromMeta,
 } from './diff/changes/argument';
