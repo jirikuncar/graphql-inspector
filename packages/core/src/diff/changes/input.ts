@@ -115,7 +115,9 @@ export function inputFieldDescriptionAdded(
   });
 }
 
-function buildInputFieldDescriptionRemovedMessage(args: InputFieldDescriptionRemovedChange['meta']) {
+function buildInputFieldDescriptionRemovedMessage(
+  args: InputFieldDescriptionRemovedChange['meta'],
+) {
   return `Description was removed from input field '${args.inputName}.${args.inputFieldName}'`;
 }
 
@@ -144,7 +146,9 @@ export function inputFieldDescriptionRemoved(
   });
 }
 
-function buildInputFieldDescriptionChangedMessage(args: InputFieldDescriptionChangedChange['meta']) {
+function buildInputFieldDescriptionChangedMessage(
+  args: InputFieldDescriptionChangedChange['meta'],
+) {
   return `Input field '${args.inputName}.${args.inputFieldName}' description changed from '${args.oldInputFieldDescription}' to '${args.newInputFieldDescription}'`;
 }
 
@@ -176,7 +180,9 @@ export function inputFieldDescriptionChanged(
   });
 }
 
-function buildInputFieldDefaultValueChangedMessage(args: InputFieldDefaultValueChangedChange['meta']) {
+function buildInputFieldDefaultValueChangedMessage(
+  args: InputFieldDefaultValueChangedChange['meta'],
+) {
   return `Input field '${args.inputName}.${args.inputFieldName}' default value changed from '${args.oldDefaultValue}' to '${args.newDefaultValue}'`;
 }
 

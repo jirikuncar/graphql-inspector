@@ -119,11 +119,15 @@ export function enumValueDescriptionChanged(
   });
 }
 
-function buildEnumValueDeprecationChangedMessage(args: EnumValueDeprecationReasonChangedChange['meta']) {
+function buildEnumValueDeprecationChangedMessage(
+  args: EnumValueDeprecationReasonChangedChange['meta'],
+) {
   return `Enum value '${args.enumName}.${args.enumValueName}' deprecation reason changed from '${args.oldEnumValueDeprecationReason}' to '${args.newEnumValueDeprecationReason}'`;
 }
 
-export function enumValueDeprecationReasonChangedFromMeta(args: EnumValueDeprecationReasonChangedChange) {
+export function enumValueDeprecationReasonChangedFromMeta(
+  args: EnumValueDeprecationReasonChangedChange,
+) {
   return {
     criticality: {
       level: CriticalityLevel.NonBreaking,
@@ -157,7 +161,9 @@ function buildEnumValueDeprecationReasonAddedMessage(
   return `Enum value '${args.enumName}.${args.enumValueName}' was deprecated with reason '${args.addedValueDeprecationReason}'`;
 }
 
-export function enumValueDeprecationReasonAddedFromMeta(args: EnumValueDeprecationReasonAddedChange) {
+export function enumValueDeprecationReasonAddedFromMeta(
+  args: EnumValueDeprecationReasonAddedChange,
+) {
   return {
     criticality: {
       level: CriticalityLevel.NonBreaking,
@@ -190,7 +196,9 @@ function buildEnumValueDeprecationReasonRemovedMessage(
   return `Deprecation reason was removed from enum value '${args.enumName}.${args.enumValueName}'`;
 }
 
-export function enumValueDeprecationReasonRemovedFromMeta(args: EnumValueDeprecationReasonRemovedChange) {
+export function enumValueDeprecationReasonRemovedFromMeta(
+  args: EnumValueDeprecationReasonRemovedChange,
+) {
   return {
     criticality: {
       level: CriticalityLevel.NonBreaking,

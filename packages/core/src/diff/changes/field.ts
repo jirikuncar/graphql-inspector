@@ -239,7 +239,9 @@ export function fieldDeprecationRemoved(
   });
 }
 
-function buildFieldDeprecationReasonChangedMessage(args: FieldDeprecationReasonChangedChange['meta']) {
+function buildFieldDeprecationReasonChangedMessage(
+  args: FieldDeprecationReasonChangedChange['meta'],
+) {
   return `Deprecation reason on field '${args.typeName}.${args.fieldName}' has changed from '${args.oldDeprecationReason}' to '${args.newDeprecationReason}'`;
 }
 

@@ -39,7 +39,9 @@ export function schemaQueryTypeChanged(
   });
 }
 
-function buildSchemaMutationTypeChangedMessage(args: SchemaMutationTypeChangedChange['meta']): string {
+function buildSchemaMutationTypeChangedMessage(
+  args: SchemaMutationTypeChangedChange['meta'],
+): string {
   return `Schema mutation root has changed from '${args.oldMutationTypeName}' to '${args.newMutationTypeName}'`;
 }
 

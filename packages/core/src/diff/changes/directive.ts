@@ -133,7 +133,9 @@ export function directiveLocationAdded(
   });
 }
 
-function buildDirectiveLocationRemovedMessage(args: DirectiveLocationRemovedChange['meta']): string {
+function buildDirectiveLocationRemovedMessage(
+  args: DirectiveLocationRemovedChange['meta'],
+): string {
   return `Location '${args.removedDirectiveLocation}' was removed from directive '${args.directiveName}'`;
 }
 
@@ -200,7 +202,9 @@ export function directiveArgumentAdded(
   });
 }
 
-function buildDirectiveArgumentRemovedMessage(args: DirectiveArgumentRemovedChange['meta']): string {
+function buildDirectiveArgumentRemovedMessage(
+  args: DirectiveArgumentRemovedChange['meta'],
+): string {
   return `Argument '${args.removedDirectiveArgumentName}' was removed from directive '${args.directiveName}'`;
 }
 
@@ -316,7 +320,9 @@ export function directiveArgumentDefaultValueChanged(
   });
 }
 
-function buildDirectiveArgumentTypeChangedMessage(args: DirectiveArgumentTypeChangedChange): string {
+function buildDirectiveArgumentTypeChangedMessage(
+  args: DirectiveArgumentTypeChangedChange,
+): string {
   return `Type for argument '${args.meta.directiveArgumentName}' on directive '${args.meta.directiveName}' changed from '${args.meta.oldDirectiveArgumentType}' to '${args.meta.newDirectiveArgumentType}'`;
 }
 

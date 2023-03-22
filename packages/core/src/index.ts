@@ -138,4 +138,4 @@ export {
   UnionMemberRemovedChange,
   UnionMemberAddedChange,
   SerializableChange,
-} from "./diff/changes/change";
+} from './diff/changes/change';

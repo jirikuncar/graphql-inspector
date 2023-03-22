@@ -95,7 +95,9 @@ export function fieldArgumentDefaultChanged(
   });
 }
 
-function buildFieldArgumentTypeChangedMessage(args: FieldArgumentTypeChangedChange['meta']): string {
+function buildFieldArgumentTypeChangedMessage(
+  args: FieldArgumentTypeChangedChange['meta'],
+): string {
   return `Type for argument '${args.argumentName}' on field '${args.typeName}.${args.fieldName}' changed from '${args.oldArgumentType}' to '${args.newArgumentType}'`;
 }
 
